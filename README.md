@@ -46,7 +46,7 @@ Além desse **_Path_** , também teremos um similante a ele, a dentro desse **_P
 
 
 
-`alias at ="touch **_Path2_**"  
+```alias at ="touch **_Path2_**"  
 
 alias dat ="rm **_Path2_**"  
 
@@ -64,7 +64,7 @@ else
 
     alias switch ="at"      
     
-fi`  
+fi``` 
 
 
 
