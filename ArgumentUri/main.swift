@@ -21,6 +21,7 @@ extension StringProtocol {
 }
 
 // Creating a variable that recive a random number in range that start in 1001 and and in 2999
+
 var question = Int.random(in: 1001 ..< 3000)
 
 
@@ -37,6 +38,7 @@ struct ByIdOrRandom: ParsableCommand {
         // Magno, isso me bugou, se a gente não passar nada ele não carrega ?
         question = id
         challengerFinder()
+        print("vai man")
         
     }
     
@@ -133,3 +135,4 @@ func challengerFinder() {
 
 
 ByIdOrRandom.main()
+

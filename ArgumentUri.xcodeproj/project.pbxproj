@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		08FC2EBF241F9D9E00A655B4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC2EBE241F9D9E00A655B4 /* main.swift */; };
 		08FC2EC7241F9DDE00A655B4 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 08FC2EC6241F9DDE00A655B4 /* ArgumentParser */; };
+		0F985DCA243768D200D24A76 /* ArgumentUri in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FC2EBB241F9D9E00A655B4 /* ArgumentUri */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		08FC2EB9241F9D9E00A655B4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = /Users/Shared/Applications;
 			dstSubfolderSpec = 0;
 			files = (
+				0F985DCA243768D200D24A76 /* ArgumentUri in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -74,6 +76,7 @@
 				08FC2EB7241F9D9E00A655B4 /* Sources */,
 				08FC2EB8241F9D9E00A655B4 /* Frameworks */,
 				08FC2EB9241F9D9E00A655B4 /* CopyFiles */,
+				0F985DCB2437A09D00D24A76 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -122,6 +125,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F985DCB2437A09D00D24A76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "alias dat=\"rm /Users/Shared/Applications/oi.txt\"\nalias at=\"touch /Users/Shared/Applications/oi.txt\"\nalias uri=\"clear &&  /Users/Shared/Applications/ArgumentUri\"\nif [ -e /Users/Shared/Applications/oi.txt ]\nthen\n        alias switch=\"dat\"\n        uri\nelse\n        alias switch=\"at\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08FC2EB7241F9D9E00A655B4 /* Sources */ = {

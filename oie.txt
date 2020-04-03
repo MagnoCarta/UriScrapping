@@ -1,0 +1,10 @@
+alias dat="rm /Users/Shared/Applications/oi.txt"
+alias at="touch /Users/Shared/Applications/oi.txt"
+alias uri="clear &&  /Users/Shared/Applications/ArgumentUri"
+if [ -e /Users/Shared/Applications/oi.txt ]
+then
+        alias switch="dat"
+        uri
+else
+        alias switch="at"
+fi
