@@ -46,10 +46,10 @@ Além desse **_Path_** , também teremos um similante a ele, a dentro desse **_P
 
 
 ```
-alias at ="touch **_Path2_**"
-alias dat ="rm **_Path2_**"
-alias uri="clear && **_Path_**"
-if [ -e **_Path2_**]
+alias at ="touch Path2"
+alias dat ="rm Path2"
+alias uri="clear && Path"
+if [ -e Path2]
 then  
     uri      
     alias switch ="dat"         
